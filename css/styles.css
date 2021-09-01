@@ -1,0 +1,354 @@
+:root {
+  --menu-aktiv: #2196f3;
+  --menu-standart: #212121;
+  --osn-color: #757575;
+  --belyi: #ffffff;
+  --zag-h-ty: #212121;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--osn-color);
+}
+.list {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* хедер, верхнее меню */
+.header {
+  height: 80px;
+  border: 1px solid #ececec;
+}
+.nav {
+}
+.logo {
+  width: 145px;
+  margin-right: 93px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.logo-color-add {
+  color: var(--menu-aktiv);
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+/* .logo:hover,
+.logo:focus,
+.logo:visited {
+  color: var(--menu-standart);
+} */
+.header-links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--menu-standart);
+  cursor: pointer;
+}
+.header-links:visited {
+  color: var(--menu-standart);
+}
+.header-links:hover,
+.header-links:focus {
+  color: var(--menu-aktiv);
+}
+.header-buttons-ul {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+.header-buttons {
+  display: block;
+  margin-right: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--osn-color);
+  margin-left: auto;
+  width: 135px;
+}
+.header-buttons:hover,
+.header-buttons:focus {
+  color: var(--menu-aktiv);
+}
+.indent-buttons + .indent-buttons {
+  margin-left: 30px;
+}
+.indent + .indent {
+  margin-left: 50px;
+}
+
+/* банер */
+
+.banner {
+  background: #2f303a;
+  color: var(--belyi);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  margin-bottom: 94px;
+}
+.banner > h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.banner-button {
+  display: block;
+  margin-top: 0px;
+  padding: 0px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--menu-aktiv);
+  color: var(--belyi);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+/* наши преимущиства */
+
+.benefits {
+  margin-bottom: 94px;
+}
+.benefits > ul > li > h2 {
+  margin-bottom: 10px;
+}
+.benefits-heading {
+  color: var(--zag-h-ty);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  width: 270px;
+}
+.benefits-list {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  width: 270px;
+  margin-top: 0;
+}
+.container-flex > li {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.benefits-li + .benefits-li {
+  margin-left: 30px;
+}
+.benefits-li:nth-child(-n + 1) {
+  margin-left: 15px;
+}
+.benefits-li:nth-child(n + 4) {
+  margin-right: 15px;
+}
+/* чем мы занимаемся */
+.section {
+  margin-bottom: 94px;
+}
+.activity {
+  color: var(--zag-h-ty);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.activity-list-b {
+  color: var(--zag-h-ty);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.activity-list {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.activity-item + .activity-item {
+  margin-left: 30px;
+}
+.activity-item:nth-child(-n + 1) {
+  margin-left: 15px;
+}
+.activity-item:nth-child(n + 3) {
+  margin-right: 15px;
+}
+.activity-li {
+  width: 270px;
+}
+.activity-li + .activity-li {
+  margin-left: 30px;
+}
+.activity-li > img {
+  margin-bottom: 30;
+}
+.activity-li:nth-child(-n + 1) {
+  margin-left: 15px;
+}
+.activity-li:nth-child(n + 4) {
+  margin-right: 15px;
+}
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-address {
+  color: var(--belyi);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-links {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-links:hover,
+.footer-links:focus {
+  color: var(--menu-aktiv);
+}
+.footer-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-item > .logo-footer {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.footer-li + .footer-li {
+  margin-top: 9px;
+}
+/* партфолио радио кнопки */
+.none {
+  display: none;
+}
+.button-flex {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  margin-bottom: 50px;
+}
+.radio-button {
+  background-color: #f5f4fa;
+  width: 130px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--zag-h-ty);
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.button-item + .button-item {
+  margin-left: 8px;
+}
+.radio-button:hover,
+.radio-button:focus {
+  background-color: var(--menu-aktiv);
+}
+.button-list {
+  display: block;
+}
+/* портфолио наши работы */
+.raboti-h {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--zag-h-ty);
+}
+.raboti-p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrap > li {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.wrap > li:nth-child(3n + 1) {
+  margin-left: 15px;
+}
+.wrap > li:nth-child(3n) {
+  margin-right: 15px;
+}
+.wrap > li:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.padding-work {
+  padding-bottom: 94px;
+}
