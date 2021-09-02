@@ -13,6 +13,7 @@ body {
   font-style: normal;
   font-weight: 400;
   color: var(--osn-color);
+  margin: 0;
 }
 .list {
   padding: 0;
@@ -34,9 +35,10 @@ p {
 /* хедер, верхнее меню */
 .header {
   height: 80px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .nav {
+  padding: 25px 0px;
 }
 .logo {
   width: 145px;
@@ -118,18 +120,15 @@ p {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  margin-bottom: 94px;
+  padding: 200px 0px;
 }
 .banner > h1 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding: 0;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  font-size: 44px;
+  text-transform: uppercase;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .banner-button {
@@ -155,10 +154,11 @@ p {
 /* наши преимущиства */
 
 .benefits {
-  margin-bottom: 94px;
+  padding: 94px 0px;
 }
 .benefits > ul > li > h2 {
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .benefits-heading {
   color: var(--zag-h-ty);
@@ -190,7 +190,13 @@ p {
 }
 /* чем мы занимаемся */
 .section {
-  margin-bottom: 94px;
+  padding: 94px 0px;
+  /* margin-bottom: 94px; */
+}
+/* наша команда */
+.section-activity {
+  padding: 94px 0px;
+  background: #f5f4fa;
 }
 .activity {
   color: var(--zag-h-ty);
@@ -208,6 +214,7 @@ p {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .activity-list {
   font-size: 16px;
@@ -227,6 +234,8 @@ p {
 }
 .activity-li {
   width: 270px;
+  background: #ffffff;
+  text-align: center;
 }
 .activity-li + .activity-li {
   margin-left: 30px;
@@ -316,6 +325,7 @@ p {
 .radio-button:hover,
 .radio-button:focus {
   background-color: var(--menu-aktiv);
+  color: #ffffff;
 }
 .button-list {
   display: block;
@@ -327,11 +337,18 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--zag-h-ty);
+  padding-left: 24px;
+  padding-top: 20px;
 }
 .raboti-p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.section-work-indent {
+  padding: 94px 0px;
 }
 .wrap {
   flex-wrap: wrap;
@@ -339,6 +356,8 @@ p {
 .wrap > li {
   margin-left: 30px;
   margin-bottom: 30px;
+  outline: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 }
 .wrap > li:nth-child(3n + 1) {
   margin-left: 15px;
